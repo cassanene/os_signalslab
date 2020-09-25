@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
     signal(SIGALRM, handler); //register handler to handle SIGALRM
     alarm(ALARM_CONST);       //schedule a SIGALRM for 1 second
 
-    while (1)
+    while (ALARM_CONST)
     {
         while (global == 0)
             ; //infinite loop
